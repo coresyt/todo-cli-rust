@@ -1,8 +1,10 @@
 mod add;
+mod list;
 
 use clap::{ArgMatches, Command};
 
 pub use add::AddCommand;
+pub use list::ListCommand;
 /// ## Trait template for CLI command implementations
 ///
 /// `BasicCommand` is intended to be used as a base trait for implementing
