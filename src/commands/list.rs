@@ -58,7 +58,7 @@ impl BasicCommand for ListCommand {
         };
 
         for task in list {
-            let is_completed = if task.completed { "completed" } else { "in completed" };
+            let is_completed = if task.completed { "completed" } else { "in-completed" };
             println!("{}. \"{}\" is {}", task.id, task.description, is_completed)
         }
     }
