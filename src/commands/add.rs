@@ -60,7 +60,7 @@ impl BasicCommand for AddCommand {
 
         let new_task = ITask {
             description: description.clone(),
-            id: if (&list).len() == 0 { 0 } else { (&list).len() + 1 },
+            id: if (&list).len() == 0 { 1 } else { (&list).len() + 1 },
             completed: false
         };
 
